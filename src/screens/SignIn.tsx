@@ -1,17 +1,17 @@
-import { useState } from "react";
-import { VStack, Heading, Icon, useTheme } from "native-base";
-import { Envelope, Key } from "phosphor-react-native";
+import { useState } from 'react';
+import { VStack, Heading, Icon, useTheme } from 'native-base';
+import { Envelope, Key } from 'phosphor-react-native';
 
-import Logo from "../assets/logo_primary.svg";
+import Logo from '../assets/logo_primary.svg';
 
-import { Input } from "../components/Input";
-import { Button } from "../components/Button";
+import { Input } from '../components/Input';
+import { Button } from '../components/Button';
 
 export function SignIn() {
     const [name, setName] = useState('');
     const [password, setPassword] = useState('');
 
-    const { colors } = useTheme()
+    const { colors } = useTheme();
 
     return (
         <VStack flex={1} alignItems="center" bg="gray.600" px={8} pt={24}>
